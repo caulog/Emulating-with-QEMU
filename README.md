@@ -20,7 +20,8 @@
 4. Login with `root` and no password
 
 ## Run MTE test program to ensure qemu is working
-1. `nano test.c` to create a file for the test program
-2. Copy the program from the bottom of this page https://docs.kernel.org/arm64/memory-tagging-extension.html and paste it into test.c
-3. Compile it `gcc test.c -march=armv8.5-a+memtag`
-4. Run the program `./a.out` and if you see a Segmentation fault after " Expecting SIGSEGV " then MTE is working.  
+1. `cd /home`
+2. `nano test.c` to create a file for the test program
+3. Copy the program from the bottom of this page https://docs.kernel.org/arm64/memory-tagging-extension.html and paste it into test.c
+4. Compile it `gcc test.c -march=armv8.5-a+memtag`
+5. Run the program `./a.out` and if you see a Segmentation fault after " Expecting SIGSEGV " then MTE is working.  
