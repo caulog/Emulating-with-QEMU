@@ -19,8 +19,8 @@
 3. Run `sudo qemu-system-aarch64 -M virt,mte=on -m 4096 -cpu max -drive format=raw,file=disk.img -nographic -append "root=/dev/vda2 net.ifaces=0 rootwait" -initrd initrd.img-6.0.0-6-arm64 -kernel vmlinuz-6.0.0-6-arm64` to enter qemu
 4. Login with `root` and no password
 5. Run MTE test program to ensure that qemu is working
-5. a. `nano test.c` to create a file for the test program
-5. b. Copy the program from the bottom of this page https://docs.kernel.org/arm64/memory-tagging-extension.html and paste it into test.c
-5. c. Compile it `gcc test.c -march=armv8.5-a+memtag`
-5. d. Run the program `./a.out` and if you see a Segmentation fault after " Expecting SIGSEGV " then MTE is working.  
+a. `nano test.c` to create a file for the test program
+b. Copy the program from the bottom of this page https://docs.kernel.org/arm64/memory-tagging-extension.html and paste it into test.c
+c. Compile it `gcc test.c -march=armv8.5-a+memtag`
+d. Run the program `./a.out` and if you see a Segmentation fault after " Expecting SIGSEGV " then MTE is working.  
 
