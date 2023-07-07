@@ -1,11 +1,11 @@
 # install qemu
-#   sudo apt install libslirp-dev -y
-#   wget https://download.qemu.org/qemu-8.0.0-rc4.tar.xz
-#   tar xvJf qemu-8.0.0-rc4.tar.xz
+    sudo apt install libslirp-dev -y
+    wget https://download.qemu.org/qemu-8.0.0-rc4.tar.xz
+    tar xvJf qemu-8.0.0-rc4.tar.xz
     cd qemu-8.0.0-rc4
-#   ./configure --enable-slirp
-#   make -j$(nproc)
-#   sudo make install  
+    ./configure --enable-slirp
+    make -j$(nproc)
+    sudo make install  
 
 # Create and partition a disk
     cd .. 
