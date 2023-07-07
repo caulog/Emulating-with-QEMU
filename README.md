@@ -10,8 +10,7 @@
    ```
    git clone https://github.com/caulog/qemu-environment.git
    ```
-3. Run the `vagrant up` command in the directory with the Vagrantfile
-4. Provision the file with `vagrant provision`
+3. Run the `vagrant up` command in the directory with the Vagrantfile, this will automatically provision the VM
 
 ## To emulate with qemu
 1. Ssh into the VM `vagrant ssh`
