@@ -4,7 +4,7 @@
      tar xvJf qemu-8.0.0-rc4.tar.xz
      cd qemu-8.0.0-rc4
      ./configure --enable-slirp
-     make
+     make -j$(nproc)
      sudo make install  
 
 # Create and partition a disk
