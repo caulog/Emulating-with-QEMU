@@ -13,7 +13,7 @@
 3. Run the `vagrant up` command in the directory with the Vagrantfile
 4. Provision the file with `vagrant provision`
 
-## After provisioning
+## To emulate with qemu
 1. Ssh into the VM `vagrant ssh`
 2. cd into linux-envs directory `cd linux-envs`
 3. Run `sudo qemu-system-aarch64 -M virt,mte=on -m 4096 -cpu max -drive format=raw,file=disk.img -nographic -append "root=/dev/vda2 net.ifaces=0 rootwait" -initrd initrd.img-6.1.0-9-arm64 -kernel vmlinuz-6.1.0-9-arm64` to enter qemu
